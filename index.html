@@ -6,20 +6,28 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 class="title">Etch-a-Sketch</h1>
-        <div class="play-area">
-            <div class="container"></div>
-            <div class="options">
-                <button class="reset">Clear</button>
-                <select name="color" id="color">
-                    <option value="red">Red</option>
-                    <option value="blue">Blue</option>
-                    <option value="green">Green</option>
-                    <option value="white">White</option>
-                    <option value="black">Black</option>
-                    <option value="random">Random</option>
-                </select>
+        <div class="body">
+            <h1 class="title">Etch-a-Sketch</h1>
+            <div class="play-area">
+                <div class="container"></div>
+                <div class="options">
+                    <button class="reset">Clear</button>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="random">Random</option>
+                    </select>
+                    <select name="mode" id="mode">
+                        <option value="soft">Soft</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <button class="eraser">Eraser</button>
+                </div>
             </div>
+        <p class="info">Made by bradapc</p>
         </div>
         <script src="script.js"></script>
     </body>
