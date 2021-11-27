@@ -16,7 +16,15 @@ function makeGrid(numTiles) {
     }
     let box = document.querySelectorAll('.grid-box')
     box.forEach(boxListen => boxListen.addEventListener('mouseover', () => {
-        boxListen.style.backgroundColor = "red";
+        let colorChoice = document.querySelector('#color');
+        if(colorChoice.value == 'random'){
+            let colorR = Math.floor(Math.random() * 256);
+            let colorG = Math.floor(Math.random() * 256);
+            let colorB = Math.floor(Math.random() * 256);
+            boxListen.style.backgroundColor = `rgb(${colorR},${colorG},${colorB})`;
+        } else {
+            boxListen.style.backgroundColor = `${colorChoice.value}`;
+        }
     }));
 }
 
